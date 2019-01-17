@@ -1,0 +1,10 @@
+library("png")
+library("EBImage")
+
+OctoTotale<-readPNG("octo.png")
+
+OctoDroit<-OctoTotale[1:1200,800:1600,]
+OctoGauche<-OctoTotale[1:1200,1:800,]
+
+display(OctoDroit)
+display(OctoGauche)
